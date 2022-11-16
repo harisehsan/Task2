@@ -79,7 +79,7 @@ public class Base extends BaseUtil {
     public void takeScreenShot() throws IOException {
             TakesScreenshot scrShot =((TakesScreenshot)driver);
             File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-            File DestFile=new File("screenshots\\screenshot.png");
+            File DestFile=new File("screenshots/screenshot.png");
             FileUtils.copyFile(SrcFile, DestFile);
     }
 
