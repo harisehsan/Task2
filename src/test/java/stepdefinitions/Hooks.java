@@ -42,9 +42,9 @@ public class Hooks extends BaseUtil {
 //        if (scenario.isFailed()) {
 
 //        }
-            Allure.addAttachment("Boundary prices: ",FileUtils.openInputStream(new File("text-files\\Boundary_price.txt")));
-            Allure.addAttachment("Screenshot: ",FileUtils.openInputStream(new File("screenshots\\screenshot.png")));
-            Allure.addAttachment("Scenario Video: ",FileUtils.openInputStream(new File("test-recordings\\Video.mp4")));
+            Allure.addAttachment("Boundary prices: ",FileUtils.openInputStream(new File("text-files/Boundary_price.txt")));
+            Allure.addAttachment("Screenshot: ",FileUtils.openInputStream(new File("screenshots/screenshot.png")));
+            Allure.addAttachment("Scenario Video: ",FileUtils.openInputStream(new File("test-recordings/Video.mp4")));
 
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
