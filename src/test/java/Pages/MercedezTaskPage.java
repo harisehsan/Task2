@@ -139,12 +139,12 @@ public class MercedezTaskPage extends Base {
 
    public boolean verifyTheScreenshotExists()
    {
-       File f = new File("screenshots\\screenshot.png");
+       File f = new File("screenshots/screenshot.png");
        return (f.exists());
    }
 
    public void saveTheLowestAndHighestPriceInTextFile() throws IOException {
-       String path = "text-files\\Boundary_price.txt";
+       String path = "text-files/Boundary_price.txt";
        Path path1 = Paths.get(path);
        File f = new File(path);
        if (!Files.isRegularFile(path1)) {
@@ -158,7 +158,7 @@ public class MercedezTaskPage extends Base {
 
    public boolean verifyTheTextFileShouldExistAndNotEmpty()
    {
-       File f = new File("text-files\\Boundary_price.txt");
+       File f = new File("text-files/Boundary_price.txt");
        return (f.exists() && f.length() > 0);
    }
    public boolean verifyThatAllItemsShouldBeBetweenSpecifiedRange(String lowerBound, String upperBound)
